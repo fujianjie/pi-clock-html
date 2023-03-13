@@ -23,7 +23,7 @@ body{
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
 }
-.white-theme{
+body.white-theme{
   --color-background: var(--vt-c-white);
   --color-background-soft: var(--vt-c-white-soft);
   --color-background-mute: var(--vt-c-white-mute);
@@ -35,9 +35,7 @@ body{
   --color-text: var(--vt-c-text-light-1);
 }
 /* semantic color variables for this project */
-:root {
-
-
+body.black-theme {
   --color-background: var(--vt-c-black);
   --color-background-soft: var(--vt-c-black-soft);
   --color-background-mute: var(--vt-c-black-mute);
@@ -47,10 +45,7 @@ body{
 
   --color-heading: var(--vt-c-text-dark-1);
   --color-text: var(--vt-c-text-dark-2);
-
   --section-gap: 160px;
-
-
 }
 
 @media (prefers-color-scheme: dark) {
