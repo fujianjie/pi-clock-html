@@ -22,16 +22,15 @@ setInterval(() => {
   dateStr.value = tempStr[0]
   timeStr.value = tempStr[1]
   const dateObj = new Date()
-  if (dateObj.getHours() === 7 && dateObj.getMinutes() === 0 && dateObj.getSeconds() === 0) {
+  if ((dateObj.getHours() >= 7 && dateObj.getHours() < 19) && bodyTag.className !== whiteTheme) {
     bodyTag.className = whiteTheme
   }
-  if (dateObj.getHours() === 19 && dateObj.getMinutes() === 0 && dateObj.getSeconds() === 0) {
+  if ((dateObj.getHours() >= 19 || dateObj.getHours() < 7) && bodyTag.className !== blackTheme) {
     bodyTag.className = blackTheme
   }
   if (dateObj.getHours() % 2 === 0 && dateObj.getMinutes() === 0 && dateObj.getSeconds() === 0) {
     setWeather()
   }
-
 }, 1000)
 
 async function setWeather() {
