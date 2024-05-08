@@ -2,6 +2,7 @@
   <div class="clock">
     {{ dateStr }}<br/>
     {{ timeStr }}<br/>
+    <span>{{ weather }}</span>
   </div>
 
 </template>
