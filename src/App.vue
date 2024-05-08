@@ -2,7 +2,6 @@
   <div class="clock">
     {{ dateStr }}<br/>
     {{ timeStr }}<br/>
-    <span>{{ weather }}</span>
   </div>
 
 </template>
@@ -34,6 +33,7 @@ setInterval(() => {
 }, 1000)
 
 async function setWeather() {
+  // 接口过期了
   weatherApi().then((resp: Record<string, any>) => {
     const content = `${resp.data.wea} ${resp.data.tem2}℃-${resp.data.tem1}℃`
     weather.value = content
