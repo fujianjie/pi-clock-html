@@ -4,6 +4,8 @@
 
 ## API https://yikeapi.com/
 
+jian-jie.fu@qq.com
+PkuSsRy3VCCV3HT
 ## Project Setup
 
 ```sh
